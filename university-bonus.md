@@ -28,6 +28,11 @@ GROUP BY `office_address` ;
 
 ```sql
 
+SELECT 
+	`exam_id`,
+	AVG(`vote`)
+FROM `university`.`exam_student`
+GROUP BY `exam_id` ;
 
 
 ```
