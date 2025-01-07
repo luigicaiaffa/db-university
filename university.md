@@ -69,7 +69,7 @@ WHERE `level` = 'magistrale' ;
 
 ```sql
 
-SELECT  COUNT(`name`) AS `number_of_departments`
+SELECT COUNT(`name`) AS `number_of_departments`
 FROM `university`.`departments` ;
 
 ```
@@ -87,7 +87,7 @@ degree_id, inserire un valore casuale)
 
 ```sql
 
-
+INSERT INTO `university`.`students` (`degree_id`, `name`, `surname`, `date_of_birth`, `fiscal_code`, `enrolment_date`, `registration_number`, `email`) VALUES ('5', 'Luigi', 'Caiaffa', '2001-12-19', 'CFFLGU01T19H501X', '2021-10-04', '202504', 'luigicaiaffa@gmail.com');
 
 ```
 
@@ -95,7 +95,7 @@ degree_id, inserire un valore casuale)
 
 ```sql
 
-
+UPDATE `university`.`teachers` SET `office_number` = '126' WHERE (`id` = '58');
 
 ```
 
@@ -103,6 +103,6 @@ degree_id, inserire un valore casuale)
 
 ```sql
 
-
+DELETE FROM `university`.`students` WHERE (`id` = '5001');
 
 ```
