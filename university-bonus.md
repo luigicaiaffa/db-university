@@ -18,7 +18,7 @@
 
 SELECT 
 	`office_address`,
-	COUNT(`id`) AS `count`
+	COUNT(`id`) AS `teachers_count`
 FROM `university`.`teachers`
 GROUP BY `office_address` ;
 
@@ -41,6 +41,10 @@ GROUP BY `exam_id` ;
 
 ```sql
 
-
+SELECT 
+	 `department_id`,
+     COUNT(`id`) AS `degrees_count`
+FROM `university`.`degrees`
+GROUP BY `department_id` ;
 
 ```
