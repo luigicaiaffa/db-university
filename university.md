@@ -47,7 +47,9 @@ WHERE `year` = '1' AND `period` = 'I semestre' ;
 
 ```sql
 
-
+SELECT *
+FROM `university`.`exams`
+WHERE `hour` > '14:00:00' AND `date` = '2020-06-20'
 
 ```
 
