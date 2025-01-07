@@ -49,7 +49,7 @@ WHERE `year` = '1' AND `period` = 'I semestre' ;
 
 SELECT *
 FROM `university`.`exams`
-WHERE `hour` > '14:00:00' AND `date` = '2020-06-20'
+WHERE `hour` > '14:00:00' AND `date` = '2020-06-20' ;
 
 ```
 
@@ -57,7 +57,9 @@ WHERE `hour` > '14:00:00' AND `date` = '2020-06-20'
 
 ```sql
 
-
+SELECT *
+FROM `university`.`degrees`
+WHERE `level` = 'magistrale' ;
 
 ```
 
@@ -65,7 +67,8 @@ WHERE `hour` > '14:00:00' AND `date` = '2020-06-20'
 
 ```sql
 
-
+SELECT  COUNT(`name`) AS `number_of_departments`
+FROM `university`.`departments` ;
 
 ```
 
