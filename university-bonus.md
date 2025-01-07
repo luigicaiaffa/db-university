@@ -7,7 +7,7 @@
 SELECT 
 	YEAR(`enrolment_date`)  AS `year`,
 	COUNT(`id`) AS `students_count`
-FROM `university`.`students`
+FROM `students`
 GROUP BY `year` ;
 
 ```
@@ -19,7 +19,7 @@ GROUP BY `year` ;
 SELECT 
 	`office_address`,
 	COUNT(`id`) AS `teachers_count`
-FROM `university`.`teachers`
+FROM `teachers`
 GROUP BY `office_address` ;
 
 ```
@@ -31,7 +31,7 @@ GROUP BY `office_address` ;
 SELECT 
 	`exam_id`,
 	AVG(`vote`)
-FROM `university`.`exam_student`
+FROM `exam_student`
 GROUP BY `exam_id` ;
 
 
@@ -44,7 +44,7 @@ GROUP BY `exam_id` ;
 SELECT 
 	 `department_id`,
      COUNT(`id`) AS `degrees_count`
-FROM `university`.`degrees`
+FROM `degrees`
 GROUP BY `department_id` ;
 
 ```

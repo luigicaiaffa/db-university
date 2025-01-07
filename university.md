@@ -5,7 +5,7 @@
 ```sql
 
 SELECT *
-FROM `university`.`students`
+FROM `students`
 WHERE `date_of_birth` BETWEEN "1990-01-01" AND "1990-12-31"
 ORDER BY `date_of_birth` ;
 
@@ -16,7 +16,7 @@ ORDER BY `date_of_birth` ;
 ```sql
 
 SELECT *
-FROM `university`.`courses`
+FROM `courses`
 WHERE `cfu` > '10' ;
 
 ```
@@ -26,7 +26,7 @@ WHERE `cfu` > '10' ;
 ```sql
 
 SELECT *
-FROM `university`.`students`
+FROM `students`
 WHERE DATEDIFF(CURDATE(), `date_of_birth`) > '10965'
 ORDER BY `date_of_birth` ;
 
@@ -38,7 +38,7 @@ laurea (286)
 ```sql
 
 SELECT *
-FROM `university`.`courses`
+FROM `courses`
 WHERE `year` = '1' AND `period` = 'I semestre' ;
 
 
@@ -50,7 +50,7 @@ WHERE `year` = '1' AND `period` = 'I semestre' ;
 ```sql
 
 SELECT *
-FROM `university`.`exams`
+FROM `exams`
 WHERE `hour` > '14:00:00' AND `date` = '2020-06-20' ;
 
 ```
@@ -60,7 +60,7 @@ WHERE `hour` > '14:00:00' AND `date` = '2020-06-20' ;
 ```sql
 
 SELECT *
-FROM `university`.`degrees`
+FROM `degrees`
 WHERE `level` = 'magistrale' ;
 
 ```
@@ -70,7 +70,7 @@ WHERE `level` = 'magistrale' ;
 ```sql
 
 SELECT COUNT(`name`) AS `number_of_departments`
-FROM `university`.`departments` ;
+FROM `departments` ;
 
 ```
 
@@ -79,7 +79,7 @@ FROM `university`.`departments` ;
 ```sql
 
 SELECT COUNT(*) AS `teachers_without_number`
-FROM `university`.`teachers`
+FROM `teachers`
 WHERE `phone` IS NULL
 
 ```
@@ -89,7 +89,7 @@ degree_id, inserire un valore casuale)
 
 ```sql
 
-INSERT INTO `university`.`students` (`degree_id`, `name`, `surname`, `date_of_birth`, `fiscal_code`, `enrolment_date`, `registration_number`, `email`) VALUES ('5', 'Luigi', 'Caiaffa', '2001-12-19', 'CFFLGU01T19H501K', '2021-10-04', '202504', 'luigicaiaffa@gmail.com');
+INSERT INTO `students` (`degree_id`, `name`, `surname`, `date_of_birth`, `fiscal_code`, `enrolment_date`, `registration_number`, `email`) VALUES ('5', 'Luigi', 'Caiaffa', '2001-12-19', 'CFFLGU01T19H501K', '2021-10-04', '202504', 'luigicaiaffa@gmail.com');
 
 ```
 
@@ -97,7 +97,7 @@ INSERT INTO `university`.`students` (`degree_id`, `name`, `surname`, `date_of_bi
 
 ```sql
 
-UPDATE `university`.`teachers` SET `office_number` = '126' WHERE (`id` = '58');
+UPDATE `teachers` SET `office_number` = '126' WHERE (`id` = '58');
 
 ```
 
@@ -105,6 +105,6 @@ UPDATE `university`.`teachers` SET `office_number` = '126' WHERE (`id` = '58');
 
 ```sql
 
-DELETE FROM `university`.`students` WHERE (`id` = '5001');
+DELETE FROM `students` WHERE (`id` = '5001');
 
 ```
