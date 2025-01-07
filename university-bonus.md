@@ -4,11 +4,11 @@
 
 ```sql
 
--- SELECT 
--- 	YEAR(`enrolment_date`)  AS `year`,
--- 	COUNT(`id`) AS `count`
--- FROM `university`.`students`
--- GROUP BY `enrolment_date` ;
+SELECT 
+	YEAR(`enrolment_date`)  AS `year`,
+	COUNT(`id`) AS `students_count`
+FROM `university`.`students`
+GROUP BY `year` ;
 
 ```
 

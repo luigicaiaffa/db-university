@@ -89,7 +89,7 @@ degree_id, inserire un valore casuale)
 
 ```sql
 
-INSERT INTO `university`.`students` (`degree_id`, `name`, `surname`, `date_of_birth`, `fiscal_code`, `enrolment_date`, `registration_number`, `email`) VALUES ('5', 'Luigi', 'Caiaffa', '2001-12-19', 'CFFLGU01T19H501X', '2021-10-04', '202504', 'luigicaiaffa@gmail.com');
+INSERT INTO `university`.`students` (`degree_id`, `name`, `surname`, `date_of_birth`, `fiscal_code`, `enrolment_date`, `registration_number`, `email`) VALUES ('5', 'Luigi', 'Caiaffa', '2001-12-19', 'CFFLGU01T19H501K', '2021-10-04', '202504', 'luigicaiaffa@gmail.com');
 
 ```
 
