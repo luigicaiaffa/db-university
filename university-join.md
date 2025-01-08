@@ -27,7 +27,11 @@ WHERE `department_id` = 7 AND `degrees`.`level` = 'magistrale' ;
 
 ```sql
 
-
+SELECT * 
+FROM `course_teacher`
+JOIN `courses`
+ON `course_id` = `courses`.`id` 
+WHERE `teacher_id` = 44 ;
 
 ```
 
