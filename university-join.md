@@ -41,7 +41,13 @@ nome
 
 ```sql
 
-
+SELECT * 
+FROM `students`
+JOIN `degrees`
+ON `degree_id` = `degrees`.`id` 
+JOIN `departments`
+ON `department_id` = `departments`.`id` 
+ORDER BY `students`.`name`, `students`.`surname` ;
 
 ```
 
