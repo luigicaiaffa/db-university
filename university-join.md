@@ -15,7 +15,11 @@ Neuroscienze
 
 ```sql
 
-
+SELECT * 
+FROM `degrees`
+JOIN `departments`
+ON `department_id` = `departments`.`id`
+WHERE `department_id` = 7 AND `degrees`.`level` = 'magistrale' ;
 
 ```
 
