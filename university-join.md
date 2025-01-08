@@ -71,7 +71,15 @@ Matematica (54)
 
 ```sql
 
-
+SELECT * 
+FROM `course_teacher`
+JOIN `teachers`
+ON `teacher_id` = `teachers`.`id` 
+JOIN `courses`
+ON `course_id` = `courses`.`id`
+JOIN `degrees`
+ON `degree_id` = `degrees`.`id` 
+WHERE `department_id` = 5 ;
 
 ```
 
