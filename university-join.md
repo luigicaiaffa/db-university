@@ -89,6 +89,17 @@ filtrare i tentativi con voto minimo 18.
 
 ```sql
 
-
+SELECT 
+	`course_id`,
+	`student_id`,
+    COUNT(`course_id`) AS `number_of_try`,
+	MAX(`vote`) AS `max_vote`
+FROM `exam_student`
+JOIN `students`
+ON `student_id` = `students`.`id`
+JOIN `exams`
+ON `exam_id` = `exams`.`id`
+GROUP BY `student_id`, `course_id` 
+HAVING `max_vote` >= 18 ;
 
 ```
