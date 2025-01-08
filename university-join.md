@@ -55,7 +55,14 @@ ORDER BY `students`.`name`, `students`.`surname` ;
 
 ```sql
 
-
+SELECT * 
+FROM `course_teacher`
+JOIN `courses`
+ON `course_id` = `courses`.`id`
+JOIN `degrees`
+ON `degree_id` = `degrees`.`id` 
+JOIN `teachers`
+ON `teacher_id` = `teachers`.`id` ;
 
 ```
 
